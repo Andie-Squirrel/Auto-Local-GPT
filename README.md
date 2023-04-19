@@ -1,7 +1,16 @@
-# Auto-Llama-cpp: An Autonomous Llama Experiment
-This is a fork of Auto-GPT with added support for locally running llama models through llama.cpp.
-This is more of a proof of concept. It's sloooow and most of the time you're fighting with the too small context window size or the models answer is not valid JSON. But sometimes it works and then it's really quite magical what even such a small model comes up with. 
-But obviously don't expect GPT-4 brilliance here.
+# Auto-Local-GPT: An Autonomous Multi-LLM Project
+
+The major goal of this project is to be able to easily load your own AI model and let it run autonomously in a loop with goals you set for it, and to do this basic function without requiring an API key or an account at some website.  The focus is for boad compatability with AI models and ease of use.
+
+Reasons why this project matters:
+ - You would like to use your own LLM that is pre-trained on a custom dataset
+ - You want to use an AI model offline, without being tied to an internet API
+ - You require a LLM that is more task orientated and less politically correct,
+   such as with White Hat or Red Team security testing
+ - You're bored and just happen to have super powerful hardware sitting around
+
+This project is more for a group of folks with a lot of CPU power, rediculious amounts of RAM, and a lot of time for the AI model to process.  
+
 
 
 ## Supported Models
@@ -35,8 +44,10 @@ Fell free to add your thoughts and experiences in the [discussion](https://githu
 
 ## Future Plans
 ---
-
-1. Add GPU Support via GPTQ
-2. Improve Prompts
-3. Remove external API support (This is supposed to be completely self-contained agent)
-4. Add support for [Open Assistent](https://github.com/LAION-AI/Open-Assistant) models
+1. Try to keep in step with upstream projects
+2. Use Hugging Face transformers and some logic that optomizes for various models i.e., gpt-j and gpt-neox
+3. Search for LLMs and devise a menu to select which model to load
+4. Add GPU Support via GPTQ
+5. Improve Prompts
+6. Remove external API support (This is supposed to be completely self-contained agent)
+7. Add support for [Open Assistent](https://github.com/LAION-AI/Open-Assistant) models
