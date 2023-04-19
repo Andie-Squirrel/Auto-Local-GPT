@@ -4,10 +4,12 @@ The primary goal of this project is to enable users to easily load their own AI 
 
 Reasons why this project matters:
 
-You want to use your own LLM that is pre-trained on a custom dataset
-You want to use an AI model offline, without being tied to an internet API
-You require an LLM that is more task-oriented and less politically correct, such as with White Hat or Red Team security testing
-You have powerful hardware at your disposal and want to make use of it.
+- You want to use your own LLM that is pre-trained on a custom dataset
+- You want to use an AI model offline, without being tied to an internet API
+- You require an LLM that is more task-oriented and less politically correct,
+  such as with White Hat or Red Team security testing
+- You have powerful hardware at your disposal and want to make use of it.
+
 This project is more geared towards individuals with a lot of CPU power, a ridiculous amount of RAM, and sufficient time for the AI model to process.
 
 Auto-Local-GPT is a fork of [rhohndorf/Auto-Llama-cpp](https://github.com/rhohndorf/Auto-Llama-cpp), which is a fork of [Significant-Gravitas/Auto-GPT](https://github.com/Significant-Gravitas/Auto-GPT).
