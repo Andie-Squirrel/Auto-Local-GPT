@@ -1,8 +1,8 @@
 # Auto-Local-GPT: An Autonomous Multi-LLM Project
 
-The primary goal of this project is to enable users to easily load their own AI models and run them autonomously in a loop with goals they set, without requiring an API key or an account at some website. The focus is on compatibility with a broad range of AI models and ease of use.
+The primary goal of this project is to enable users to easily load their own AI models and run them autonomously in a loop with goals they set, without requiring an API key or an account on some website. The focus is on compatibility with a broad range of AI models and ease of use.
 
-Keep in mind, this is a project is in its infancy and barely working.
+Keep in mind that this project is in its infancy and barely working. You are currently limited to running only LLaMA/Alpaca-based models.
 
 Reasons why this project matters:
 
@@ -12,21 +12,23 @@ Reasons why this project matters:
   such as with White Hat or Red Team security testing
 - You are bored and have powerful hardware just sitting around.
 
-This project is more geared towards folks with a lot of CPU power, a ridiculous amount of RAM, and a lot of time for the AI model to process.  I'm sure someone out there will try to run this on their Intel i3 with 8GB of RAM, you're not likely to have success, if you somehow do, it'll be several days of 100% CPU use to give you a large response from a small LLM.
+This project is more geared towards folks with a lot of CPU power, a ridiculous amount of RAM, and a lot of time for the AI model to process. I'm sure someone out there will try to run this on their Intel i3 with 8GB of RAM, but you are not likely to have success. If you somehow do, it will be several days of 100% CPU use to give you a large response from a small LLM.
 
-The minimun recommended hardware for the project is:
-- A modern highend CPU with at least 16 threads
+The minimum recommended hardware for the project is:
+- A modern high-end CPU with at least 16 threads
 - At least 64GB of RAM
 
-Development on this project is happening on 2 Dell PowerEdge rack servers:
+Development for this project is happening on 2 Dell PowerEdge rack servers:
+
 R820:
 - 4x Xeon 12 core processors, 96 threads total
 - 768 GB of RAM
+
 R810:
 - 4x Xeon 10 core processors, 80 threads total
 - 256 GB of RAM
 
-Even with these servers, I sometimes have to wait up to 20 minutes for a medium sized response.  With code that is not yet intergrated in this project, using the R810 with 256 GB of ram, I usually cannot run larger than 30B sized LLM, and the largest without running out of ram is a 65B Int4 [TianXxx/llama-65b-int4](https://huggingface.co/TianXxx/llama-65b-int4).  On the R820, I am barely able to run [bigscience/bloomz](https://huggingface.co/bigscience/bloomz).
+Even with these servers, there is sometimes wait time of up to 20 minutes for a medium-sized response. With code that is not yet integrated into this project, using the R810 with 256 GB of RAM, it usually cannot run larger than a 30B sized LLM, and the largest without running out of RAM is a 65B Int4 [TianXxx/llama-65b-int4](https://huggingface.co/TianXxx/llama-65b-int4).  On the R820 with 768GB of RAM, it can comfortably run [facebook/galactica-120b](https://huggingface.co/facebook/galactica-120b), and can barely run [bigscience/bloomz](https://huggingface.co/bigscience/bloomz) with special settings.
 
 Auto-Local-GPT is a fork of [rhohndorf/Auto-Llama-cpp](https://github.com/rhohndorf/Auto-Llama-cpp), which is a fork of [Significant-Gravitas/Auto-GPT](https://github.com/Significant-Gravitas/Auto-GPT).
 
