@@ -2,17 +2,17 @@
 
 The primary goal of this project is to enable users to easily load their own AI models and run them autonomously in a loop with goals they set, without requiring an API key or an account on some website. The focus is on compatibility with a broad range of AI models and ease of use.
 
-Keep in mind that this project is in its infancy and barely working. You are currently limited to running only LLaMA/Alpaca-based models.
+This project should be considered UNSTABLE for the moment.  Keep in mind that this project is in its infancy and barely working, and sometimes not at all.  Hugging Face transformers are being added right now, as well as updates to the current LLaMA/Alpaca-based compatibility.
 
 Reasons why this project matters:
 
-- You want to use your own LLM that is pre-trained on a custom dataset
+- You want to use your own LLM that is pre-trained or fine-tuned on a custom dataset
 - You want to use an AI model offline, without being tied to an internet API
-- You require an LLM that is more task-oriented and less politically correct,
+- You want to use an LLM that is more task-oriented and less politically correct,
   such as with White Hat or Red Team security testing
 - You are bored and have powerful hardware just sitting around.
 
-This project is more geared towards folks with a lot of CPU power, a ridiculous amount of RAM, and a lot of time for the AI model to process. I'm sure someone out there will try to run this on their Intel i3 with 8GB of RAM, but you are not likely to have success. If you somehow do, it will be several days of 100% CPU use to give you a large response from a small LLM.
+This project is more geared towards folks with a lot of CPU power, a ridiculous amount of RAM, and a lot of time for the AI model to process. Inevitably, someone out there will try to run this on their old Intel i3 with 8GB of RAM, but they are not likely to have success. If they somehow do, it will be several hours of 100% CPU use to give a large response from a small LLM.
 
 The minimum recommended hardware for the project is:
 - A modern high-end CPU with at least 16 threads
@@ -30,10 +30,11 @@ R810:
 
 Even with these servers, there is sometimes wait time of up to 20 minutes for a medium-sized response. With code that is not yet integrated into this project, using the R810 with 256 GB of RAM, it usually cannot run larger than a 30B sized LLM, and the largest without running out of RAM is a 65B Int4 [TianXxx/llama-65b-int4](https://huggingface.co/TianXxx/llama-65b-int4).  On the R820 with 768GB of RAM, it can comfortably run [facebook/galactica-120b](https://huggingface.co/facebook/galactica-120b), and can barely run [bigscience/bloomz](https://huggingface.co/bigscience/bloomz) with special settings.
 
-Auto-Local-GPT is a fork of [rhohndorf/Auto-Llama-cpp](https://github.com/rhohndorf/Auto-Llama-cpp), which is a fork of [Significant-Gravitas/Auto-GPT](https://github.com/Significant-Gravitas/Auto-GPT).
-
 ## Supported Models
 ---
+Hugging Face transformers are being added as a first priority and will happen soon.
+
+
 Currently, this uses [llama.cpp](https://github.com/ggerganov/llama.cpp), it should work with all models they support, including:
 * LLaMA
 * Alpaca
@@ -68,3 +69,7 @@ Please feel free to share your thoughts and experiences in the [discussion](http
 5. Improve prompts
 6. Remove external API support (this is meant to be a completely self-contained agent)
 7. Add support for [Open Assistent](https://github.com/LAION-AI/Open-Assistant) models
+
+## History
+
+Auto-Local-GPT is a fork of [rhohndorf/Auto-Llama-cpp](https://github.com/rhohndorf/Auto-Llama-cpp), which is a fork of [Significant-Gravitas/Auto-GPT](https://github.com/Significant-Gravitas/Auto-GPT).
