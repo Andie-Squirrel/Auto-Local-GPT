@@ -72,4 +72,6 @@ Please feel free to share your thoughts and experiences in the [discussion](http
 
 ## History
 
+2023/4/18 Forked this from [rhohndorf/Auto-Llama-cpp](https://github.com/rhohndorf/Auto-Llama-cpp)
+
 Auto-Local-GPT is a fork of [rhohndorf/Auto-Llama-cpp](https://github.com/rhohndorf/Auto-Llama-cpp), which is a fork of [Significant-Gravitas/Auto-GPT](https://github.com/Significant-Gravitas/Auto-GPT).
