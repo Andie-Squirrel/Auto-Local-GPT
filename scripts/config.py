@@ -53,6 +53,7 @@ class Config(metaclass=Singleton):
         self.pinecone_region = os.getenv("PINECONE_ENV")
 
         self.image_provider = os.getenv("IMAGE_PROVIDER")
+        self.huggingface_model = os.getenv("HUGGINGFACE_MODEL")
         self.huggingface_api_token = os.getenv("HUGGINGFACE_API_TOKEN")
 
         # User agent headers to use when browsing web
@@ -118,3 +119,4 @@ class Config(metaclass=Singleton):
     def set_debug_mode(self, value: bool):
         """Set the debug mode value."""
         self.debug = value
+
